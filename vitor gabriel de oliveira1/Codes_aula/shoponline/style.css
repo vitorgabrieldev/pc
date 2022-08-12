@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body{
+    background-color: #2378c95e;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container-box
+{
+    background-color: rgb(209, 208, 208);
+    position: fixed;
+    margin-top: -230px;
+    width: 400px;
+    height: 913px;
+    box-shadow: 5px 5px 20px rgb(66, 66, 66);
+}
+
+ul
+{
+    position: relative;
+    transform: skewY(-15deg);
+    margin-left: 20px;
+    margin-top: 60%;
+}
+ul li:hover
+{
+    background: #33a3ee;
+    transform: translateX(50px);
+}
+ul li
+{
+    position: relative;
+    list-style: none;
+    width: 200px;
+    background: #3e3f46;
+    padding: 15px;
+    z-index: var(--i);
+    transition: 0.5s;
+
+}
+ul li::before
+{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    top: 0;
+    left: -40px;
+    background: #2e3133;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+}
+ul li:hover::before
+{
+    background: #2771a1;
+}
+ul li:hover::after
+{
+    background: #2993da;
+}
+ul li::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background: #35383e;
+    top: -40px;
+    left: 0;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+ul li a
+{
+    text-decoration: none;
+    color: #999;
+    display: block;text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+ul li:hover a
+{
+    color:#fff
+}
+                    /* cards */
+
+
+img
+{
+    width: 310px;
+    height: 250px;
+    transition: 0.5s;
+    margin-top: 50px;
+}
+.card{
+    position: relative;
+    width: 310px;
+    background-color: rgb(223, 223, 223);
+    margin-top: 250px;
+    margin-left: 500px; 
+    cursor: pointer;
+    height: 760px;
+    transition: 0.5s;
+    transform: skewY(-5deg);
+    box-shadow: -100px 50px 10px rgba(39, 39, 39, 0.637);
+}
+.card::before
+{
+    content: '';
+    width: 20px;
+    height: 759.5px;
+    background: rgb(87, 87, 87);
+    top: 10px;
+    left: -20px;
+    position: absolute;
+    transform: skewY(45deg);
+    margin-top: -20px;
+}
+.card h1
+{
+    text-align: center;
+}
+.card::after
+{
+    content: '';
+    width: 310px;
+    height: 20px;
+    background: rgb(116, 116, 116);
+    position: absolute;
+    left: -10.5px;
+    top: -20px;
+    transform: skewX(45deg);
+}
+.card:hover
+{
+    background-color: rgb(172, 172, 172)
+}
+.card h1
+{
+    color: rgb(139, 139, 139);
+}
+.buy
+{
+    all: unset;
+    color: rgb(255, 255, 255);
+    border: 2px solid lightgreen;
+    background: rgba(109, 109, 109, 0.527);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    margin: 0;
+    transition: 0.5s;
+    margin-top: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.buy:hover
+{
+    background-color:  rgba(145, 145, 145, 0.527);
+    
+}
+.vas
+{
+    font-size: 25px;
+}
+
+/* cards ajustes */
+#card2
+{
+    margin-top: -765px;
+    margin-left: 900px;
+}
+#card4
+{
+    margin-top: -765px;
+    margin-left: 900px;
+}
+#card6
+{
+    margin-top: -765px;
+    margin-left: 900px;
+}
+
+.seach
+{
+    all: unset;
+    position: absolute;
+    border: 2px solid rgba(85, 85, 85, 0.466);
+    background: rgba(112, 112, 112, 0.37);
+    width: 600px;
+    padding: 15px;
+    border-radius: 12px;
+    color: aliceblue;
+    margin-left: 500px;
+    margin-top: 50px;
+}
+.seach-box i
+{
+    margin-top: 500px;
+}

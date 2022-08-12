@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myweb</title>
+</head>
+<body>
+
+    <input id="txt" type="text" placeholder="digite aqui...">
+    <input id="send" type="submit" onclick="inserir()" value="enviar">
+    
+    <script>
+
+            const names = [
+                        "vitor",
+                        "joão",
+                        "leonardo",
+                        "caio",
+                    ];
+
+        var txt = document.getElementById('txt').value;
+        console.log(names);
+        /*
+        const btn = document.querySelector('#send').addEventListener('click', function(){
+
+            console.log(names);
+            console.log(names.push(txt));
+
+        };*/
+        function inserir(){
+            
+            var novoNome = names.push(txt);
+            console.log(novoNome);
+            
+
+        }
+/*
+        setInterval(() => {
+            
+            console.log(txt)
+
+        }, 100);
+*/
+
+    </script>
+
+</body>
+</html>

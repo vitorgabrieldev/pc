@@ -1,0 +1,41 @@
+body
+{
+    background: rgba(0, 0, 0, 0.52);
+}
+nav#menu
+{
+
+    display: flex;
+    justify-content: center;
+
+}
+nav#menu ul
+{
+    
+    list-style: none;
+
+    font-size: 1.5rem;
+
+    display: flex;
+    gap: 2rem;
+
+}
+
+nav#menu ul li a
+{
+    text-decoration: none;
+    color: #ffffff;
+
+    border: .1rem solid #fefefe;
+    padding: .5rem 1.5rem .5rem 1.5rem;
+    transition: .3s;
+}
+nav#menu ul li a:hover
+{
+
+    background: rgba(255, 255, 255, 0.071);
+    color: rgb(201, 201, 201);
+    border-bottom-left-radius: .7rem;
+    border-top-right-radius: .7rem;
+
+}

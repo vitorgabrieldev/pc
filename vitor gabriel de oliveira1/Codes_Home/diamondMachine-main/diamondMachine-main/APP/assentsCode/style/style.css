@@ -1,0 +1,48 @@
+
+
+
+
+
+/* navbar */
+
+.navBarContainer
+{
+
+    padding: .5rem;
+
+}
+
+.titlePagLogo::first-letter
+{
+
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(216, 216, 216);
+
+}
+
+.btnForMenu
+{
+
+    font-size: 2rem;
+    border: none;
+
+    border-radius: .5rem;
+    padding: .5rem;
+    
+    transition: .3s;
+
+    user-select: none;
+
+    cursor: pointer;
+
+}
+
+.btnForMenu:hover
+{
+
+    color: rgb(0, 0, 0);
+
+    background: #fefefe;
+
+}
